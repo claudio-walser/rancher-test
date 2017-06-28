@@ -1,0 +1,13 @@
+version: '2'
+services:
+  jenkins:
+    image: registry.dev.local:8081/local-registry/jenkins:latest
+    volumes:
+      - /home/claudio/docker/jenkins:/var/jenkins_home
+    labels:
+      traefik.port: '8080'
+      traefik.domain: dev.local
+      traefik.enable: stack
+      io.rancher.scheduler.affinity:host_label: purpose=manage
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
