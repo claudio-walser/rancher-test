@@ -1,0 +1,7 @@
+name: Docker Registry
+description: |
+  Simple Docker registry.
+version: v1.0.0
+category: Infrastructure
+maintainer: Claudio Walser
+
