@@ -1,0 +1,10 @@
+.catalog:
+  name: Jenkins CI
+  version: 2.19.4-rancher1
+  description: |
+    Simple Jenkins Container.
+
+jenkins:
+  scale: 1
+  start_on_create: true
+

@@ -1,0 +1,7 @@
+name: Jenkins CI
+description: |
+  Simple Jenkins Container.
+version: v1.0.0
+category: Infrastructure
+maintainer: Claudio Walser
+
