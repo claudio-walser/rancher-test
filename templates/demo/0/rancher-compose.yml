@@ -1,4 +1,9 @@
-version: '2'
+.catalog:
+  name: "Docker Registry Test"
+  version: "v1"
+  description: "Private Docker Registry"
+  uuid: registry-test
+
 services:
   registry-demo:
     scale: 3
