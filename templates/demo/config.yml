@@ -1,8 +1,0 @@
-name: Simple Demo with a registry
-description: |
-  Demo of deploying Hadoop using Rancher Compose + Docker Compose
-version: 3.2-rancher2
-category: Test
-maintainer: Claudio Walser
-license: Apache 2
-projectURL: https://github.com/claudio-walser/rancher-test
