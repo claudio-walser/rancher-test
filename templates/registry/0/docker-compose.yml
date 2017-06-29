@@ -1,13 +1,11 @@
-acversion: '2'
-services:
-  registry:
-    image: registry:latest
-    volumes:
-      - /home/claudio/docker/registry/data:/var/lib/registry
-    labels:
-      traefik.port: '5000'
-      traefik.domain: dev.local
-      traefik.enable: stack
-      io.rancher.scheduler.affinity:host_label: purpose=manage
-      io.rancher.container.hostname_override: container_name
-      io.rancher.container.pull_image: always
+registry:
+  image: registry:latest
+  volumes:
+    - /home/claudio/docker/registry/data:/var/lib/registry
+  labels:
+    traefik.port: '5000'
+    traefik.domain: dev.local
+    traefik.enable: stack
+    io.rancher.scheduler.affinity:host_label: purpose=manage
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.pull_image: always
