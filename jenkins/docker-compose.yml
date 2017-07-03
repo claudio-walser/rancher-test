@@ -1,7 +1,7 @@
 version: '2'
 services:
   jenkins:
-    image: registry.dev.local:8081/local-registry/jenkins:latest
+    image: registry.net-sec.ch/net-sec/jenkins:latest
     volumes:
       - /home/claudio/docker/jenkins:/var/jenkins_home
     labels:
