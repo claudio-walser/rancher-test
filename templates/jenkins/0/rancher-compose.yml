@@ -14,5 +14,5 @@ jenkins:
     unhealthy_threshold: 3
     initializing_timeout: 60000
     interval: 2000
-    strategy: recreate
+    strategy: none
     request_line: GET "/" "HTTP/1.0"
