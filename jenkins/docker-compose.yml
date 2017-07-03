@@ -3,7 +3,7 @@ services:
   jenkins:
     image: registry.net-sec.ch/net-sec/jenkins:latest
     volumes:
-      - /home/claudio/docker/jenkins:/var/jenkins_home
+      - /home/claudio/docker/jenkins:/var/jenkins_home:1000
     labels:
       traefik.port: '8080'
       traefik.domain: dev.local
