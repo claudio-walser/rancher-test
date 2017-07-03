@@ -8,10 +8,10 @@ ldap:
     - CONF_BASEDN="dc=test,dc=com"
   expose:
     - "389"
-  # labels:
+  labels:
   #   traefik.port: '8080'
   #   traefik.domain: dev.local
   #   traefik.enable: stack
-  #   io.rancher.scheduler.affinity:host_label: purpose=manage
-  #   io.rancher.container.hostname_override: container_name
-  #   io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: purpose=manage
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.pull_image: always
