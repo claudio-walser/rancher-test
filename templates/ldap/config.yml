@@ -1,0 +1,7 @@
+name: LDAP Server
+description: |
+  LDAP including LAM.
+version: v1.0.0
+category: Infrastructure
+maintainer: Claudio Walser
+
