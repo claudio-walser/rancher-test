@@ -5,7 +5,7 @@
     Simple LDAP
 
 ldap:
-  scale: 1
+  scale: 3
   start_on_create: true
   health_check:
     healthy_threshold: 2
