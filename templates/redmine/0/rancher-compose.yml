@@ -5,7 +5,7 @@
     Redmine Wiki
 
 
-registry:
+redmine:
   scale: 3
   start_on_create: true
   health_check:

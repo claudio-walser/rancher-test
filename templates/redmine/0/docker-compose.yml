@@ -1,4 +1,4 @@
-registry:
+redmine:
   image: redmine:latest
   volumes:
     - /home/claudio/docker/redmine/files:/usr/src/redmine/files
