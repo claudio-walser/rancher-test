@@ -1,0 +1,14 @@
+registry:
+  image: redmine:latest
+  volumes:
+    - /home/claudio/docker/redmine/files:/usr/src/redmine/files
+    - /home/claudio/docker/redmine/sqlite:/usr/src/redmine/sqlite
+    - /home/claudio/docker/redmine/themes:/usr/src/redmine/public/themes
+  expose:
+    - "3000"
+  labels:
+    traefik.port: '3000'
+    traefik.domain: dev.local
+    traefik.enable: stack
+    io.rancher.container.hostname_override: container_name
+    io.rancher.container.pull_image: always

@@ -1,0 +1,20 @@
+.catalog:
+  name: Redmine Wiki
+  version: 2.19.4-rancher1
+  description: |
+    Redmine Wiki
+
+
+registry:
+  scale: 3
+  start_on_create: true
+  health_check:
+    healthy_threshold: 2
+    response_timeout: 2000
+    port: 3000
+    unhealthy_threshold: 3
+    initializing_timeout: 60000
+    interval: 2000
+    strategy: recreate
+    request_line: GET "/" "HTTP/1.0"
+
