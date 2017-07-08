@@ -4,6 +4,8 @@ traefik:
   - ${http_port}:${http_port}/tcp
   - ${https_port}:${https_port}/tcp
   log_driver: ''
+  cap_add:
+  - NET_ADMIN
   labels:
     io.rancher.scheduler.global: 'true'
     io.rancher.scheduler.affinity:host_label: ${host_label}
