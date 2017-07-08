@@ -6,6 +6,7 @@ traefik:
   log_driver: ''
   cap_add:
   - NET_ADMIN
+  privileged: true
   labels:
     io.rancher.scheduler.global: 'true'
     io.rancher.scheduler.affinity:host_label: ${host_label}
